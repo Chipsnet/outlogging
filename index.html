@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- 文字コード設定 -->
+        <meta charset="utf-8">
+        
+        <!-- jsファイル読み込み -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/lity.js"></script>
+        
+        <!-- cssファイル読み込み -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/lity.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        
+        <!-- Googleフォント読み込み -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:700,900" rel="stylesheet">
+        
+        <!-- アイコン読み込み -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="img/site.webmanifest">
+        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="img/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- 画面サイズ設定 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Google用メタタグ -->
+        <meta itemprop="name" content="OutLogging">
+        <meta itemprop="description" content="創作団体 OutLoggingの公式サイトです。">
+        <meta itemprop="image" content="img/logo_main.jpg">
+
+        <!-- Facebook用メタタグ -->
+        <meta property="og:url" content="https://apps.m86.work/genkai/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="OutLogging">
+        <meta property="og:description" content="創作団体 OutLoggingの公式サイトです。">
+        <meta property="og:image" content="img/logo_main.jpg">
+
+        <!-- Twitter用メタタグ -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="OutLogging">
+        <meta name="twitter:description" content="創作団体 OutLoggingの公式サイトです。">
+        <meta name="twitter:image" content="img/logo_main.jpg">
+
+        <!-- HTML用メタタグ -->
+        <title>OutLogging</title>
+        <meta name="description" content="創作団体 OutLoggingの公式サイトです。">
+    </head>
+    <body>
+        <!-- 読み込み中の画面 -->
+        <div id="loader-bg"> 
+          <div id="loader">
+            <img src="img/logo_main.jpg" width="300" height="300" alt="Loading..." class="mx-auto d-block"/>
+          </div>
+        </div>
+        
+        <!-- 読み込み画面表示スクリプト -->
+        <script>
+            $(function() {
+              var h = $(window).height(); 
+
+              $('#contents').css('display','none');//コンテンツを非表示に
+              $('#loader-bg ,#loader').height(h).css('display','block');//ローディング画像を表示
+            });
+
+            $(window).load(function () { //読み込み完了したら実行する
+              $('#loader-bg').delay(900).fadeOut(800);//ローディングを隠す
+              $('#loader').delay(600).fadeOut(300);
+              $('#contents').css('display', 'block');//コンテンツを表示する
+            });
+
+            $(function(){
+              setTimeout('stopload()',10000);　//いつまでもローディング状態にならないように10秒で強制表示させる
+
+            });
+
+            function stopload(){ //強制表示の関数
+              $('#contents').css('display','block');
+              $('#loader-bg').delay(900).fadeOut(800);
+              $('#loader').delay(600).fadeOut(300);
+            }
+        </script>
+        
+        <!-- 本文 -->
+        <div id="contents">
+            <div class="container">
+                <h5 class="mt-5">OutLogging</h5>
+                <hr width="30" align="left" color="black">
+                <p>OutLoggingは、クリエイターの想いをカタチにして届ける創作団体です。<br>
+                所属クリエイターは常時募集しております。</p>
+                <a href="https://forms.gle/8V3DukcgV7RtotbQ9" target="_blank">応募フォーム</a>
+                <h5 class="mt-5">Works</h5>
+                <hr width="30" align="left" color="black">
+                <div class="row">
+                    <div class="col">
+                        <a href="https://i.gyazo.com/8d32369447628ac295ee371a66816028.gif" data-lity><img src="https://i.gyazo.com/709029178b35557f134bf7b5f84ebd05.gif" width="350px" height="197.75px"></a>
+                        <h5 class="mt-2">舞い散る薬莢</h5>
+                        <p>Creator: 水キング</p>                       
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="https://i.gyazo.com/3d7ac2c7212398e30f0d835afa31557c.gif" data-lity><img src="https://i.gyazo.com/3d7ac2c7212398e30f0d835afa31557c.gif" width="350px" height="197.75px"></a>
+                        <h5 class="mt-2">NekoKawaii2</h5>
+                        <p>Creator: ぶー</p>                       
+                    </div>
+                    <div class="col">
+                        <a href="https://i.gyazo.com/8733466ffec2fc1bb0f088e20684b669.gif" data-lity><img src="https://i.gyazo.com/8733466ffec2fc1bb0f088e20684b669.gif" width="350px" height="197.75px"></a>
+                        <h5 class="mt-2">Untitled1</h5>
+                        <p>Creator: th3_n00b13</p>                       
+                    </div>
+                    <div class="col">
+                        <a href="https://i.gyazo.com/738e0e37d30d86bc2f45da4d80db55ee.gif" data-lity><img src="https://i.gyazo.com/738e0e37d30d86bc2f45da4d80db55ee.gif" width="350px" height="350px"></a>
+                        <h5 class="mt-2">NekoKawaii 1</h5>
+                        <p>Creator: ぶー</p>                       
+                    </div>
+                </div>
+                <div class="text-center"><a href="works.html" ><i class="fas fa-angle-down"></i> More Works</a></div>
+            </div>
+            <footer class="page-footer font-small blue mt-5">
+                <div class="footer-copyright text-center py-3">© 2019 Copyright
+                    <a href="https://twitter.com/outlogging_" target="_blank"> OutLogging</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  z-index: 1;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+  color: #fff;
+  z-index: 2;
+}
+h1, h3, h5 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+}
+p, a {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+}
+.jumbotron {
+  background-image: url("../img/bg_1920x1080.png");
+  background-size: cover;
+  background-position: center 60%;
+}
