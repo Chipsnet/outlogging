@@ -1,0 +1,45 @@
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  z-index: 1;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+  color: #fff;
+  z-index: 2;
+}
+h1, h3, h5 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+}
+p, a {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+}
+.jumbotron {
+  background-image: url("https://i.gyazo.com/de90e9700b467477d4bca34975f12e24.png");
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+.jt-pos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  width: 100px;
+  text-align: center;/*一応BOX内の文字も中央寄せ*/
+}
