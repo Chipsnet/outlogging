@@ -1,32 +1,16 @@
-# OutLoggingとは？
-2019年より活動を開始した創作団体です。
+## outlogging.work
+クリエイターの交流・サポートを目的としたクリエイター団体OutLoggingの公式サイトです。     
+[MONO*NOKE](https://outlogging.work/mononoke/)というブランドも運営しています。
 
-- 映像
-- デザイン
-- 絵
-- 小説
-- 開発
+## LICENSE
+images, videos: All rights reserved.        
+Others: [Mozilla Public v 2.0](https://choosealicense.com/licenses/mpl-2.0/)
 
-以上のことを得意としています。
+## DONATE
+https://minato86.me/donate.html
 
-# Links
-## 公式サイト
+## メンバー向け
+このページはGithubPagesでホストしています。     
+更新をする際はPullRequestを行ってください。
 
-[outlogging.cf](https://outlogging.cf/)
-
-このリポジトリがソースです。ソースの一部を使う場合はソースコードの中に
-```
-<!-- 
-
-OutLogging.cfのソースの一部を利用しています。
-(c) 2019 OutLogging
-
--->
-```
-と表記をお願いします。
-
-## Twitter
-[@outlogging_](https://twitter.com/outlogging_)
-
-作品を公開したりします。
-フォローしてくれたらうれしいね。
+また、競合を避けるため、Masterの更新をローカルリポジトリにpullしてください。
